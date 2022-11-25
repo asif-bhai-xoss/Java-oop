@@ -11,11 +11,25 @@ package oop1;
  */
 public class OOP1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
+        Student s1 = new Student("Asif", 25);
+//        s1.name = "Asif";
+//        s1.age = 25
+        s1.print_info();
+        
+//        System.out.println("Student1 name: "+s1.name);
+//        System.out.println("Student1 age: "+s1.age);
+        
+        Student s2 = new Student();
+        s2.name = "Oishy";
+        s2.age = 22;
+        s2.print_info();
+        
+        Student s3 = new Student();
+        s3.print_info();
+        
+       
     }
     
 }
