@@ -27,9 +27,14 @@ public class OOP1 {
         s2.print_info();
         
         Student s3 = new Student();
+        s3.university = "NSU";
         s3.print_info();
         
-       
+        System.out.println("Total Students = " + Student.count);
+        
+        System.out.println("\nStatic print changed by obj = " + Student.university);
+        Student.university = "DU";
+        System.out.println("Static print changed by class = " + Student.university);
     }
     
 }
